@@ -1,0 +1,502 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+    z-index: 1;
+    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color: #fff;
+    line-height: 46.5px;
+    padding: 0 24px;
+    text-transform: uppercase;
+    
+}
+
+#nav li a {
+    font-size: 15px;
+    text-decoration: none;
+    display: block;  
+}
+
+#nav a>i {
+    font-size: 12px;
+}
+
+#nav li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3); 
+    display: none;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: #000;
+    text-transform: capitalize;
+    padding: 11px 58px 11px 16px;
+}
+
+#nav .subnav li {
+    width: 100%;
+}
+
+#header .search-icon {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 0 24px;
+    line-height: 46.5px;
+}
+
+#header .search-icon:hover {
+    background-color: #f44336;
+}
+
+#slider {
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46.5px;
+    background: url('/asset/img/img-slider.jpg') top center / cover no-repeat;
+}
+
+#slider .slider-text {
+    position: absolute;
+    bottom: 0;
+    padding: 32px 16px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#slider .slider-text-one{
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+#slider .slider-text-two{
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+#content {     
+    
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
+
+.together {
+    padding: 64px 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.infor-band {
+    color: #000;
+    text-align: center;
+}
+
+#content .all .title-all{
+    margin: 10px 0;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#content .all .slogan-all {
+    margin: 15px 0;
+    opacity: 0.6;
+    font-style: italic;
+    text-align: center;
+}
+
+#content .text-band {
+    margin: 15px 0;
+    text-align: justify;
+}
+
+#content .list-member {
+    padding: 32px 0;
+    display: flex;
+}
+
+#content .name-member {
+    margin: 15px 0;
+    text-transform: capitalize;
+}
+
+#content .avatar-member {
+    width: 60%;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+
+.tour-band {
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+
+#content .month-tour {
+    background-color: #fff;
+    color: #000;
+}
+
+#content .month-tour li {
+    list-style-type: none;
+    color: #757575;
+    display: inline-block;
+}
+
+#content .month-tour .status {
+    display: inline-block;
+    color: #fff;
+    background-color: #f44336;
+    padding: 0 8px;
+    margin-left: 16px;
+}
+
+#content .month-tour .amount{
+    display: inline-block;
+    float: right;
+    margin-right: 16px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0 8px;
+}
+
+#content .a-month {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+}
+
+#content .ticket-tour {
+    overflow: hidden;
+    padding: 32px 8px;
+    margin: 0 -16px;
+}
+
+#content .ticket-tour .a-ticket {
+    width: 33.333333%;
+    float: left;
+    padding: 0 8px;
+}
+
+#content .a-ticket .avatar-ticket {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#content .a-ticket .infor-ticket {
+    background-color: #fff;
+    color: #000;
+    padding: 0 16px;
+    line-height: 1.5;
+}
+
+#content .a-ticket .name-place {
+    padding: 15px 0;
+    font-weight: 600;
+} 
+
+#content .a-ticket .time-ticket {
+    margin-bottom: 15px;
+    opacity: 0.6;
+}
+
+#content .a-ticket .text-ticket {
+    margin: 15px 0;
+    
+}
+
+#content .a-ticket .buy-ticket {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 15px;
+}
+
+#content .a-ticket .buy-ticket:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.fifty-persent {
+    width: 50%;
+}
+
+.ful-persent {
+    width: 100%;
+}
+.container-contact {
+    padding: 32px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor-contact {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.infor-contact .text-contact {
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.input-contact .input-all {
+    font-size: 15px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    line-height: 1.5;
+}
+
+.input-contact .name-email {
+    margin: 0 -8px 8px -8px;
+    display: flex;
+}
+
+.input-contact .in-name-email {
+    padding: 0 8px;
+}
+
+.input-contact .send {
+    margin: 16px 0;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    border: none;
+    line-height: 1.5;
+    float: right;
+}
+
+.input-contact .send:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.map .img-map {
+    width: 100%;
+    height: auto;
+    
+}
+
+.modal {
+    /* position: absolute; */
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    z-index: 5;
+}
+
+.open-modal {
+    display: flex !important;
+}
+
+.modal .container-modal {
+    width: 900px;
+    max-width: 90%;
+    animation: modal 1s ease;
+}
+
+.modal .header-modal {
+    color: #fff;
+    background-color: #009688;
+    text-align: center;
+    line-height: 1.5;
+    padding: 32px 16px;
+    position: relative;
+}
+
+.modal .header-modal .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.modal .header-modal .icon:hover,
+.modal .pay:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal .title-header {
+    margin: 8px 0;
+    font-size: 30px;
+}
+
+.modal .title-header p {
+    display: inline-block; 
+    letter-spacing: 4px;
+}
+
+.modal .body-modal {
+    padding: 0 16px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.modal .form-body {
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.modal .form-body .text {
+    display: inline-block;
+}
+
+.modal .all-input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.modal .pay {
+    width: 100%;
+    color: #fff;
+    background-color: #009688;
+    margin: 16px 0;
+    padding: 16px;
+    border: none;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+@keyframes modal {
+    from {
+        transform: translateY(-150px);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#footer {
+
+}
+
+@media (max-width: 740px) {
+    .height-auto {
+        height: auto !important;
+    }
+    .overflow-visible {
+        overflow: visible !important;
+    }
+    #header {
+        overflow: hidden;
+    }
+    #nav li,.container-contact,
+    .input-contact .name-email {
+        display: block;
+    }
+    #nav li:first-child {
+        display: inline-block;
+    }
+
+    #nav .subnav {
+        position: initial;
+    }
+
+    #header .search-icon, #slider .slider-text {
+        display: none;
+    }
+    #header .search-icon2 {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #fff;
+        padding: 0 24px;
+        line-height: 46.5px;
+    }
+    
+    #header .search-icon2:hover {
+        background-color: #f44336;
+    }
+
+    #content .list-member {
+        display: block;
+    }
+
+    #content .ticket-tour .a-ticket {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+
+    .infor-contact {
+        width: 100%;
+    }
+
+    .fifty-persent {
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    #header .search-icon2 {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    #header .search-icon2 {
+        display: none;
+    }
+}
